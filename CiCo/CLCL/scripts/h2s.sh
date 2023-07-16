@@ -11,6 +11,10 @@ unzip sign_feature.zip -d ./
 hdfs dfs -get hdfs://haruna/home/byte_arnold_lq_mlnlc/user/chengxuxin/lhx/VL/EMCL-Net/tvr/models/ViT-B-32.pt
 mv ViT-B-32.pt ./modules
 
+export https_proxy=http://bj-rd-proxy.byted.org:3128
+export http_proxy=http://bj-rd-proxy.byted.org:3128
+export no_proxy=code.byted.org
+
 # MSRVTT --do_train 1 \
 CUDA_VISIBLE_DEVICES=0,1,2,3,4,5,6,7 \
 python3 -m torch.distributed.launch --nproc_per_node=8 \
