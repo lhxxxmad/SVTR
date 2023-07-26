@@ -18,7 +18,7 @@ export no_proxy=code.byted.org
 pip install --upgrade nltk
 
 git clone https://github.com/nltk/nltk_data.git
-mv -r nltk_data /home/tiger
+mv nltk_data /home/tiger
 # MSRVTT --do_train 1 \
 CUDA_VISIBLE_DEVICES=0,1,2,3,4,5,6,7 \
 python3 -m torch.distributed.launch --nproc_per_node=8 \
