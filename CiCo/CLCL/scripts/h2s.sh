@@ -16,6 +16,7 @@ export http_proxy=http://bj-rd-proxy.byted.org:3128
 export no_proxy=code.byted.org
 
 pip install --upgrade nltk
+pip install textaugment
 
 git clone https://github.com/nltk/nltk_data.git
 mv nltk_data/packages /home/tiger
