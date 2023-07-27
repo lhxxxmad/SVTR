@@ -5,11 +5,11 @@ from __future__ import print_function
 
 
 import nltk
-nltk.download('stopwords')
-nltk.download('wordnet')
-nltk.download('punkt')
-nltk.download('averaged_perceptron_tagger')
-nltk.download('omw-1.4')
+# nltk.download('stopwords')
+# nltk.download('wordnet')
+# nltk.download('punkt')
+# nltk.download('averaged_perceptron_tagger')
+# nltk.download('omw-1.4')
 import torch
 import os
 from torch.utils.data import Dataset
