@@ -15,11 +15,11 @@ export https_proxy=http://bj-rd-proxy.byted.org:3128
 export http_proxy=http://bj-rd-proxy.byted.org:3128
 export no_proxy=code.byted.org
 
-pip install --upgrade nltk
+# pip install --upgrade nltk
 pip install textaugment
 
-git clone https://github.com/nltk/nltk_data.git
-mv nltk_data/packages /home/tiger
+# git clone https://github.com/nltk/nltk_data.git
+# mv nltk_data/packages /home/tiger
 # MSRVTT --do_train 1 \
 CUDA_VISIBLE_DEVICES=0,1,2,3,4,5,6,7 \
 python3 -m torch.distributed.launch --nproc_per_node=8 \

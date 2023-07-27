@@ -10,11 +10,11 @@ import pickle
 from dataloaders.rawvideo_util import RawVideoExtractor
 import random
 import nltk
-# nltk.download('stopwords')
-# nltk.download('wordnet')
-# nltk.download('punkt')
-# nltk.download('averaged_perceptron_tagger')
-# nltk.download('omw-1.4')
+nltk.download('stopwords')
+nltk.download('wordnet')
+nltk.download('punkt')
+nltk.download('averaged_perceptron_tagger')
+nltk.download('omw-1.4')
 from textaugment import EDA
 
 class ph_DataLoader_train(Dataset):
